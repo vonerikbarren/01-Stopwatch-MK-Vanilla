@@ -37,23 +37,25 @@
             </div>
 
             <div class="col-md-4">
-              <div class="jumbotron border border-dark">
+              <div id="Animation" class="jumbotron border border-danger">
 
                 <!-- Application -->
                 <div class="wrapper text-center">
 
                   <p>
-                    <span id="seconds">00</span>:
-                    <span id="tens">00</span>
+                    <span id="seconds" class="text-danger">00</span>:
+                    <span id="tens" class="text-danger">00</span>
                   </p>
                   <button id="button-start">Start</button>
                   <button id="button-stop">Stop</button>
                   <button id="button-reset">Reset</button>
                 </div>
+
                 <!-- Right Column -->
                 <div class="col-md-4">
 
                 </div>
+
               </div>
 
             </div>
@@ -61,8 +63,10 @@
         </div>
       </div>
 
-      <script src="StopWatch.js"></script>
 
+
+      <!-- GSAP Animation -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -75,6 +79,8 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
+      <script src="StopWatch.js"></script>
+      <script src="Animation.js"></script>
 
 
 </body>
