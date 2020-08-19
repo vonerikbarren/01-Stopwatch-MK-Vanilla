@@ -5,11 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   gsap.to("#Animation", {
     duration: 2,
-    x: 0,
-    y: 500,
+    x: -500,
+    y: 250,
     rotationX: 360,
     rotationY: 360,
     rotationZ: 360,
-    scale: 5
+    scale: 2.5
   });
+
+  gsap.from("#Instructions", {
+    duration: 5,
+    y: -400
+  });
+
+  // gsap.to("#Instructions", {
+  //   duration: 2,
+  //   y: 20
+  // });
 });
