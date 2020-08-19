@@ -9,3 +9,12 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   text-align: center;
 
 }
+
+button {
+  background: #CE5937;
+background: -moz-linear-gradient(-45deg, #CE5937 0%, #A4A4A4 50%, #CE5937 100%);
+background: -webkit-linear-gradient(-45deg, #CE5937 0%, #A4A4A4 50%, #CE5937 100%);
+background: linear-gradient(135deg, #CE5937 0%, #A4A4A4 50%, #CE5937 100%);
+border: 5px double #FFFFFF;
+border-radius: 40px;
+}
