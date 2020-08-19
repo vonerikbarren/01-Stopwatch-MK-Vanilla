@@ -1,60 +1,70 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
+  // Handler when the DOM is fully loaded
 
-  //--> Section A: Initialization of Variables 
-  let seconds = 00;
-  let tens = 00;
-  let appendTens = document.getElementsByClassName("tens");
-  let appendSeconds = document.getElementsByClassName("seconds");
-  let buttonStart = document.getElementsByClassName("button-start");
-  let buttonStop = document.getElementsByClassName("button-stop");
-  let buttonReset = document.getElementsByClassName("button-reset");
-  let Interval;
+  window.onload = function () {
 
-  // --> Necessary Functions
+    //--> Section A: Initialization of Variables 
+    var seconds = 00;
+    var tens = 00;
+    var appendTens = document.getElementsByClassName("tens");
+    var appendSeconds = document.getElementsByClassName("seconds");
+    var buttonStart = document.getElementsByClassName("button-start");
+    var buttonStop = document.getElementsByClassName("button-stop");
+    var buttonReset = document.getElementsByClassName("button-reset");
+    var Interval;
 
-  buttonStart.onclick = function () {
-    clearInterval(Interval);
-    Interval = setInterval(startTimer, 10);
-  }
+    // --> Necessary Functions
 
-  buttonStop.onclick = function () {
-    clearInterval(Interval);
-  }
-
-  buttonReset.onclick = function () {
-    clearInterval(Interval);
-
-    tens = "00";
-    seconds = "00";
-    appendTens.innerHTML = tens;
-    appenndSeconds.innerHTML = seconds;
-  }
-
-  function startTimer() {
-    tens++;
-
-    if (tens < 9) {
-      appendTens.innerHTML = "0" + tens;
+    buttonStart.onclick = function () {
+      clearInterval(Interval);
+      Interval = setInterval(startTimer, 10);
     }
 
-    if (tens > 9) {
+    buttonStop.onclick = function () {
+      clearInterval(Interval);
+    }
+
+    buttonReset.onclick = function () {
+      clearInterval(Interval);
+
+      tens = "00";
+      seconds = "00";
       appendTens.innerHTML = tens;
+      appenndSeconds.innerHTML = seconds;
     }
 
-    if (tens > 99) {
-      console.log("seconds");
-      seconds++;
-      appendSeconds.innerHTML = "0" + seconds;
-      tens = 0;
-      appendTens.innerHTML = "0" + 0;
+    function startTimer() {
+      tens++;
+
+      if (tens < 9) {
+        appendTens.innerHTML = "0" + tens;
+      }
+
+      if (tens > 9) {
+        appendTens.innerHTML = tens;
+      }
+
+      if (tens > 99) {
+        console.log("seconds");
+        seconds++;
+        appendSeconds.innerHTML = "0" + seconds;
+        tens = 0;
+        appendTens.innerHTML = "0" + 0;
+      }
+
+      if (seconds > 9) {
+        appendSeconds.innerHTML = seconds;
+      }
     }
 
-    if (seconds > 9) {
-      appendSeconds.innerHTML = seconds;
-    }
+
+
+    //--> final bracket
   }
 
+  console.log("--> Program Initiated <-- ");
+});
 
 
-  //--> final bracket
-}
+
+
