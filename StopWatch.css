@@ -18,3 +18,8 @@ background: linear-gradient(135deg, #CE5937 0%, #A4A4A4 50%, #CE5937 100%);
 border: 5px double #FFFFFF;
 border-radius: 40px;
 }
+
+.border-red {
+  border: 5px outset #B21B1B;
+border-radius: 20px;
+}

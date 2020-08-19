@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 2,
     x: -500,
     y: 250,
-    rotationX: 360,
-    rotationY: 360,
-    rotationZ: 360,
+    // rotationX: 360,
+    // rotationY: 360,
+    // rotationZ: 360,
     scale: 2.5
   });
 
