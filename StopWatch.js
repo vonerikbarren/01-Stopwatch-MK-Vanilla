@@ -60,3 +60,6 @@ window.onload = function () {
 
 
 }
+
+// --> Notes <--
+// --> This is used for learning purposes specifically
